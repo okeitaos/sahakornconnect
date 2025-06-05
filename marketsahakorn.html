@@ -12,6 +12,24 @@
   <link rel="stylesheet" href="https://bit.ly/fontiton5" type="text/css" charset="utf-8" /> <style type="text/css"> body { font-family: 'line_seed_sans_th'; } </style>
 
  <style>
+
+   /* บังคับปุ่มของ SweetAlert2 ให้แสดงทันที */
+.swal2-container {
+  z-index: 999999 !important;
+}
+
+.swal2-popup {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: scale(1) !important;
+}
+
+.swal2-confirm, .swal2-cancel {
+  display: inline-block !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+   
   height-component {
   height: 100%;
 }
