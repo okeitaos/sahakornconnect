@@ -953,10 +953,10 @@ btnOrderNow.addEventListener('click', async () => {
       title: "คุณต้องการสั่งซื้อ?",
       text: "หากมั่นใจแล้ว ดำเนินการเลย!",
       icon: "warning",
-          showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, Send Now!'
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, Send Now!'
     }).then((result) => {
       if (result.isConfirmed) {
         liff.sendMessages([
