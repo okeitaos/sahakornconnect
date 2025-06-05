@@ -952,19 +952,14 @@ btnOrderNow.addEventListener('click', async () => {
 
      const sendMessage = await  Nyan Cat
 
-Try me!
-Swal.fire({
-  title: "Custom width, padding, color, background.",
-  width: 600,
-  padding: "3em",
-  color: "#716add",
-  background: "#fff url(/images/trees.png)",
-  backdrop: `
-    rgba(0,0,123,0.4)
-    url("/images/nyan-cat.gif")
-    left top
-    no-repeat
-  `
+ const sendMessage = await Swal.fire({
+  title: "คุณต้องการสั่งซื้อ?",
+  text: "หากมั่นใจแล้ว ดำเนินการเลย!",
+  icon: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "Yes, สั่งสินค้า"
 }).then((result) => {
       if (result.isConfirmed) {
         liff.sendMessages([
