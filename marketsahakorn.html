@@ -959,7 +959,11 @@ btnOrderNow.addEventListener('click', async () => {
   showCancelButton: true,
   confirmButtonColor: "#3085d6",
   cancelButtonColor: "#d33",
-  confirmButtonText: "Yes, สั่งสินค้า"
+  confirmButtonText: "Yes, สั่งสินค้า",
+  customClass: {
+    confirmButton: 'swal2-confirm-custom',
+    cancelButton: 'swal2-cancel-custom'
+  }
 }).then((result) => {
       if (result.isConfirmed) {
         liff.sendMessages([
